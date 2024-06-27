@@ -16,7 +16,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header style={{
+
+          display: "flex",
+          backgroundColor: "ghostwhite",
+          padding: "1rem",
+        }}>
+          <ul style={{
+            display: "flex",
+            flexDirection: "row",
+            margin: "1vh"
+          }}>
+            <li>
+              <a style={{ margin: "2rem" }} href="">About  </a>
+            </li>
+            <li><a style={{ margin: "2rem" }} href="">contact </a></li>
+            <li><a style={{ margin: "2rem" }} href="">Info </a></li>
+          </ul>
+
+
+        </header>
+
+        {children}</body>
     </html>
   );
 }
